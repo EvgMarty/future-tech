@@ -18,6 +18,6 @@
 
 .visible-mobile {
   @include mobile-above {
-    display: block !important;
+    display: none !important;
   }
 }
