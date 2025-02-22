@@ -4,12 +4,26 @@
 @use 'utils';
 @use 'globals';
 
+// HEADER
 @use 'blocks/icon';
 @use 'blocks/logo';
 @use 'blocks/button';
 @use 'blocks/burger-button';
 @use 'blocks/header';
+
+// FOOTER
 @use 'blocks/badge';
 @use 'blocks/soc1als';
 @use 'blocks/footer';
 
+// HERO
+@use 'blocks/metrics';
+@use 'blocks/team';
+@use 'blocks/resources-preview';
+@use 'blocks/advantage-card';
+@use 'blocks/hero';
+
+header,
+footer {
+  display: none !important;
+}
