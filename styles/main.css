@@ -300,6 +300,30 @@ svg * {
   }
 }
 
+.full-vw-line {
+  position: relative;
+}
+.full-vw-line::before, .full-vw-line::after {
+  position: absolute;
+  width: calc((100vw + var(--container-width)) / 2);
+  height: 0.0625rem;
+  background: var(--color-dark-15);
+}
+.full-vw-line--top::before {
+  content: "";
+  bottom: 100%;
+}
+.full-vw-line--bottom::after {
+  content: "";
+  top: 100%;
+}
+.full-vw-line--left::before, .full-vw-line--left::after {
+  right: 100%;
+}
+.full-vw-line--right::before, .full-vw-line--right::after {
+  left: 100%;
+}
+
 html.is-lock {
   overflow: hidden;
 }
@@ -822,6 +846,34 @@ button::before {
   row-gap: 0.875rem;
 }
 
+.advantage-card {
+  display: grid;
+  row-gap: 1.875rem;
+}
+.advantage-card__link {
+  --circleSize: 3.25rem;
+  --circleMarginLeft: 1.25rem;
+  position: relative;
+  display: grid;
+  row-gap: 0.25rem;
+  margin-right: calc(var(--circleSize) + var(--circleMarginLeft));
+}
+.advantage-card__link::after {
+  width: var(--circleSize);
+  height: var(--circleSize);
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  content: "";
+  right: 0;
+  background: url(../../icons/arrow-right-top__black.svg) center no-repeat var(--color-accent);
+  border-radius: 50%;
+}
+.advantage-card__details {
+  font-size: clamp(0.875rem, 0.7794117647rem + 0.3921568627vw, 1.25rem);
+  font-family: var(--font-family-accent);
+}
+
 .hero__main {
   display: grid;
   grid-template-columns: 60% auto;
@@ -847,6 +899,7 @@ button::before {
 }
 .hero__metrics {
   grid-area: metrics;
+  border-top: var(--border);
 }
 .hero__resources-preview {
   grid-area: resources-preview;
@@ -854,6 +907,24 @@ button::before {
   padding-bottom: 5rem;
   border-left: var(--border);
   background: url(../../images/resources-preview/bg.png) 0 0/cover no-repeat;
+}
+.hero__advantages {
+  border-block: var(--border);
+}
+.hero__advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.hero__advantages-item {
+  --padingX: 5rem;
+  padding-block: 3.125rem;
+}
+.hero__advantages-item:not(:first-child) {
+  padding-left: var(--padingX);
+}
+.hero__advantages-item:not(:last-child) {
+  padding-right: var(--padingX);
+  border-right: var(--border);
 }
 
 header,
