@@ -12,6 +12,7 @@
     row-gap: rem(10);
     padding: rem(50);
 
+<<<<<<< HEAD
     @include laptop {
       row-gap: rem(2);
       padding: rem(30) rem(40);
@@ -22,6 +23,8 @@
       padding: rem(20);
     }
 
+=======
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
     &:first-child {
       padding-left: 0;
     }
@@ -31,12 +34,15 @@
     }
   }
 
+<<<<<<< HEAD
   &__key {
     @media (max-width: 455px) {
       padding-right: 27px;
     }
   }
 
+=======
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
   &__value {
     font-weight: 600;
   }

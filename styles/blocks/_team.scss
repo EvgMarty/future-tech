@@ -8,6 +8,7 @@
   background-color: var(--color-dark-10);
   border-radius: rem(100);
 
+<<<<<<< HEAD
   @include laptop {
     --personImageSize: #{rem(50)};
 
@@ -20,16 +21,21 @@
 
   }
 
+=======
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
   &__person {
     width: var(--personImageSize);
     background-color: var(--color-dark-15);
     border-radius: 50%;
     border: 2px solid var(--color-dark-40);
 
+<<<<<<< HEAD
     @include laptop {
       border-width: rem(1);
     }
 
+=======
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
     &:not(:first-child) {
       margin-left: calc(var(--personImageSize) / 4 * -1);
     }

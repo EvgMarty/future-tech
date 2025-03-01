@@ -2,6 +2,7 @@
 
 .hero {
   &__main {
+<<<<<<< HEAD
     @include tablet-above {
       display: grid;
       grid-template-columns: 60% auto;
@@ -9,6 +10,13 @@
         'body resources-preview'
         'metrics resources-preview';
     }
+=======
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-areas:
+      'body resources-preview'
+      'metrics resources-preview';
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
   }
 
   &__body {
@@ -17,6 +25,7 @@
     padding-top: rem(150);
     padding-right: rem(50);
     padding-bottom: rem(100);
+<<<<<<< HEAD
 
     @include laptop {
       padding-top: rem(100);
@@ -28,6 +37,8 @@
       padding-top: rem(40);
       padding-bottom: rem(30);
     }
+=======
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
   }
 
   &__subtitle {
@@ -39,26 +50,33 @@
 
     &:not(:last-child) {
       margin-bottom: rem(30);
+<<<<<<< HEAD
 
       @include mobile {
         margin-bottom: rem(14);
       }
+=======
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
     }
   }
 
   &__title {
     &:not(:last-child) {
       margin-bottom: rem(20);
+<<<<<<< HEAD
 
       @include mobile {
         margin-bottom: rem(10);
       }
+=======
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
     }
   }
 
   &__metrics {
     grid-area: metrics;
 
+<<<<<<< HEAD
     @include tablet-above {
       border-top: var(--border);
     }
@@ -69,6 +87,9 @@
         right: calc(var(--container-padding-x) * -1);
       }
     }
+=======
+    border-top: var(--border);
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
   }
 
   &__resources-preview {
@@ -76,6 +97,7 @@
 
     padding-left: rem(80);
     padding-bottom: rem(80);
+<<<<<<< HEAD
 
     background: url(../../images/resources-preview/bg.png) 0 0 / cover no-repeat;
 
@@ -95,16 +117,28 @@
       background-image: url(../../images/resources-preview/bg_tablet.png);
       background-size: contain;
     }
+=======
+    border-left: var(--border);
+
+    background: url(../../images/resources-preview/bg.png) 0 0 / cover no-repeat;
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
   }
 
   &__advantages {
     border-block: var(--border);
+<<<<<<< HEAD
 
     &-list {
       @include tablet-above {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
       }
+=======
+    
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
     }
 
     &-item {
@@ -112,6 +146,7 @@
 
       padding-block: rem(50);
 
+<<<<<<< HEAD
       @include laptop {
         --padingX: #{rem(50)};
 
@@ -135,6 +170,15 @@
         &:not(:last-child) {
           border-bottom: var(--border);
         }
+=======
+      &:not(:first-child) {
+        padding-left: var(--padingX);
+      }
+
+      &:not(:last-child) {
+        padding-right: var(--padingX);
+        border-right: var(--border);
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
       }
     }
   }

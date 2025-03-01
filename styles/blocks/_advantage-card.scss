@@ -4,6 +4,7 @@
   display: grid;
   row-gap: rem(30);
 
+<<<<<<< HEAD
   @include laptop {
     row-gap: rem(20);
   }
@@ -22,6 +23,8 @@
     }
   }
 
+=======
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
   &__link {
     --circleSize: #{rem(52)};
     --circleMarginLeft: #{rem(20)};
@@ -29,6 +32,7 @@
     position: relative;
     display: grid;
     row-gap: rem(4);
+<<<<<<< HEAD
     padding-right: calc(var(--circleSize) + var(--circleMarginLeft));
 
     @include laptop {
@@ -41,6 +45,9 @@
     @include mobile {
       --circleSize: #{rem(40)};
     }
+=======
+    margin-right: calc(var(--circleSize) + var(--circleMarginLeft));
+>>>>>>> bc24ba75a202f105ed0aaaa6b2764fb7d39f7960
 
     &::after {
       @include square(var(--circleSize));
