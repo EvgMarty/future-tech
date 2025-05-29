@@ -2,4 +2,10 @@
 @use 'fonts';
 @use 'variables';
 @use 'globals';
+@use 'utils';
 
+@use 'blocks/icon';
+@use 'blocks/logo';
+@use 'blocks/button';
+@use 'blocks/burger-button';
+@use 'blocks/header';
