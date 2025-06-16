@@ -1,4 +1,4 @@
-# Future Tech Landing Page
+# Future Tech — Corporate Website
 
 ## About the Project
 
